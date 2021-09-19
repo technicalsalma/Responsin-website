@@ -1,0 +1,42 @@
+@media (max-width: 768px) {
+    .navber ul{
+        display: none;
+      }
+      .text-center h2{
+        font-size: 34px;
+        line-height: 40px;
+    }
+    .showcase{
+        height: auto;
+        padding: 20px 0;
+        
+    }
+    .text-center{
+    padding-left: 35px;
+    }
+
+    .sports{
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+    }
+    .container{
+        padding:0 10px;
+    }
+    .grid{
+        grid-template-columns: 1fr;
+    }
+    .grid img{
+        text-align: center;
+    }
+    .animation h1{
+      font-size: 45px;
+      margin: 0;
+    }
+    .change_content{
+        font-size: 45px;
+    }
+    .footer{
+        text-align: center;
+     }
+   
+}

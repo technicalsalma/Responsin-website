@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+:root{
+    --primary-color:#2D25A0;
+    --secondary-color: #E02C6D;
+    --dark-color:#000;
+    --light-color:#f4f4f4;
+    --white-color:#fff;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.container{
+    max-width: 1050px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+}
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    color: var(--white-color) ;
+  
+}
+.btn{
+    background: var(--secondary-color);
+    color: #fff;
+    padding: 0 10px;
+    margin: 0 8px;
+    animation: anim 5s infinite;
+}
+
+@keyframes anim {
+    0%{
+        background-color: #E02C6D;
+        color: #fff;
+    }
+    30% {
+        background-color: chartreuse;
+        color: #000;
+    }
+    70% {
+        background-color: orange;
+        color: #fff  ;
+    }
+}
+
+
+
+
+h1, h2{
+    font-weight: 300;
+    line-height: 1.2;
+    margin: 10px 0;
+ }
+p{
+    margin: 10px 0;
+}
+img{
+    max-width: 100%;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+/*=========Navber==========*/
+.navber{
+    background-color: var(--primary-color);
+    color: #fff; 
+    padding: 30px 0;
+ }
+ .flex{
+    display: flex;
+    justify-content: space-between;
+    }
+ .navber ul{
+    display: flex;
+  }
+ 
+ .navber a{
+    padding: 0 10px;
+    margin: 0 5px;
+ } 
+
+ /*==========Showcase=========*/
+ .showcase{
+     height: 450px;
+     background-color: var(--primary-color) ;
+     padding: 30px 0 100px 0;
+     margin-bottom: 50px;
+ }
+.text-center h2{
+    color: var(--white-color);
+    font-size: 64px;
+    font-weight: bold;
+    line-height: 80px;
+}
+
+.text-center .btn{
+      padding: 10px 24px;
+      margin: 24px 0px;
+}
+
+/*==========Animation section =========*/
+.animation{
+    width: 100%;
+    text-align: center;
+     color: #fff;
+     background-color: #130f40;
+     padding: 30px 0;
+     margin-bottom: 30px;
+ }
+
+ 
+ .animation h3{
+     font-size: 35px;
+     letter-spacing: 3px;
+     font-weight: 200;
+ }
+ 
+ .animation h1{
+     padding: 20px 0;
+     margin: 30px 0 20px 0;
+     font-size: 55px;
+     font-weight: 700;
+     text-shadow: 2px 5px 1px black;
+     text-transform: uppercase;
+ }
+
+ .change_content:after{
+     content: '';
+     animation: changetext 10s infinite linear;
+     color: #00b894;
+ }
+ 
+ @keyframes changetext{
+     0%{content: "Home";}
+     20%{content: "Clubs";}
+     35%{content: "World Cup 2023";}
+     60%{content: "Upcoming Matches";}
+     80%{content: "Sports";}
+     100%{content: "Bangladesh";}
+     
+ }
+ 
+
+
+/*==========Main-Section =========*/
+
+
+ .sports{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+   grid-gap: 20px;
+}
+.article{
+    padding: 10px;
+    background: var(--white-color);
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+.article h2{
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 40px;
+}
+
+
+ /*==========Copa America 2022=========*/
+ .Copa{
+     margin-top: 50px;
+    padding: 30px 0 100px 0;
+}
+
+.text-right h2{
+   color: var(--drak-color);
+   font-weight: bold;
+   font-size: 48px;
+   line-height: 60px;
+}
+.text-right h2{
+    flex: 1 1 200px;
+ }
+.text-right p{
+    font-size: 16px;
+    line-height: 28px;
+    margin: 20px 0;
+ }
+
+.text-right .btn{
+        padding: 10px 24px;
+        margin: 24px 0px;
+  }
+
+/*==========Form=========*/
+  form{
+    width: 90%;
+    max-width: 600px;
+  }
+  .input-group{
+      margin-bottom: 30px;
+      position: relative;
+  }
+  input,textarea{
+      width: 100%;
+      padding: 10px;
+      outline: 0;
+      border: 1px solid #000;
+      background:  ;
+      font-size: 15px;
+  }
+  
+  label{
+      height: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      padding: 10px;
+      color: #000;
+      cursor: text;
+      transition: 0.2s;
+  }
+  form .button{
+      padding: 10px 0;
+      color: #000;
+      outline: 0;
+      border: 1px solid #000;
+      width: 100%;
+      cursor: pointer;
+      margin-bottom: 20px;
+  }
+  input:focus~label,
+  input:valid~label,
+  textarea:focus~label,
+  textarea:valid~label{
+      top: -35px;
+      font-size: 14px;
+  }
+  .row{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+  }
+  .row .input-group{
+      flex-basis: 46%;
+  }
+  
+
+
+/*==========Footer Section =========*/
+.footer{
+    width: 500px;
+    height: 200px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.footer img{
+    text-align: center;
+}
+.footer img:nth-child(1){
+    width: 480px;
+   text-align: center;
+    padding-right: 100PX;
+}
+
+.footer img:nth-child(2){
+    width: 170px;
+    height: 32px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
